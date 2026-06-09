@@ -1,0 +1,81 @@
+# Categories mapping for AGA built-in rules.
+# Maps MalSkillBench behavior IDs to human-readable labels and attack vectors.
+# Used by `aga rule list` for display and by the Rule Engine for execution path selection.
+
+B1:
+  label: "Data Exfiltration"
+  vector: CI
+  description: "Skill attempts to scan and send data to external endpoints"
+
+B2:
+  label: "Credential Theft"
+  vector: CI
+  description: "Skill attempts to steal API keys, tokens, passwords, or environment variables"
+
+B3:
+  label: "Remote Code Execution"
+  vector: CI
+  description: "Skill downloads and executes remote code at runtime"
+
+B4:
+  label: "Malware Delivery"
+  vector: CI
+  description: "Skill downloads, installs, or runs a malware binary"
+
+B5:
+  label: "Persistence"
+  vector: CI
+  description: "Skill writes to cron, bashrc, systemd, or other startup mechanisms"
+
+B6:
+  label: "Reverse Shell"
+  vector: CI
+  description: "Skill establishes interactive reverse shell to an attacker-controlled endpoint"
+
+B7:
+  label: "Ransomware"
+  vector: CI
+  description: "Skill encrypts user files and demands payment for decryption"
+
+B8:
+  label: "Resource Abuse"
+  vector: CI
+  description: "Skill performs cryptomining, DDoS, fork bombs, or other resource exhaustion"
+
+B9:
+  label: "Privilege Escalation"
+  vector: CI
+  description: "Skill attempts chmod 4755, sudo abuse, SUID manipulation, or container escape"
+  note: "High false-positive risk — requires_deep for reliable classification"
+
+B10:
+  label: "Role Hijacking"
+  vector: PI
+  description: "Skill injects persona or role-play instructions to replace the agent's identity"
+
+B11:
+  label: "Safety Bypass"
+  vector: PI
+  description: "Skill instructs the agent to ignore safety rules, filters, or restrictions"
+
+B12:
+  label: "Instruction Override"
+  vector: PI
+  description: "Skill uses 'ignore previous instructions' payloads to override system directives"
+
+B13:
+  label: "System Prompt Leak"
+  vector: PI
+  description: "Skill induces the agent to reveal its system prompt or internal instructions"
+
+B14:
+  label: "Goal Hijacking"
+  vector: PI
+  description: "Skill covertly redirects the agent's task to a different objective"
+  note: "Inherently semantic — requires_deep for reliable detection"
+
+B15:
+  label: "Content Manipulation"
+  vector: PI
+  description: "Skill injects biased, false, or manipulated content into agent outputs"
+  note: "Most subtle PI attack — requires_deep for reliable detection"

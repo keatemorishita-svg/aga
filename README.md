@@ -18,7 +18,7 @@ AGA is an open-source security scanner for AI Agent Skills. Think of it as `npm 
 - 📈 Assigns a risk score (0–100), attack labels (B1–B15), and remediation suggestions
 - 🔗 Integrates with GitHub Actions / CI/CD pipelines
 
-AGA's detection taxonomy is aligned with the [MalSkillBench](https://github.com/malskillbench/malskillbench) research benchmark, covering 15 malicious behavior categories across 3 attack vectors.
+AGA's detection taxonomy is aligned with the [MalSkillBench](https://github.com/lxyeternal/MalSkillBench) research benchmark, covering 15 malicious behavior categories across 3 attack vectors.
 
 ---
 

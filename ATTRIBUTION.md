@@ -8,7 +8,7 @@ AGA's behavior taxonomy (B1-B15), detection keywords, attack vector classificati
 
 > Wenbo Guo, Wei Zeng, Chengwei Liu, Xiaojun Jia, Yijia Xu, Lei Tang, Yong Fang, and Yang Liu. "MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills." arXiv:2606.07131, 2026.
 
-- Repository: https://github.com/malskillbench/MalSkillBench
+- Repository: https://github.com/lxyeternal/MalSkillBench
 - Paper: https://arxiv.org/abs/2606.07131
 
 The `aga/taxonomy/` module and `aga/sdk/rules/builtin/` rule set translate MalSkillBench's classification system into machine-actionable YAML rules. AGA is an independent project and is not affiliated with or endorsed by the MalSkillBench authors.

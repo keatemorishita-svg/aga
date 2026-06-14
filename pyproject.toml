@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aga-sec"
-version = "0.1.1"
+version = "0.1.2"
 description = "AGA · Agent Governance & Assurance — AI Agent Skill security scanner."
 readme = "README.md"
 license = {text = "Apache-2.0"}
@@ -75,6 +75,9 @@ include = [
     "tests/",
     "LICENSE",
     "README.md",
+]
+exclude = [
+    "tests/fixtures/skills/malware/",
 ]
 
 [tool.ruff]
